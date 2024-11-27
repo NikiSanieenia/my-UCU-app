@@ -187,10 +187,10 @@ def main():
     st.title("File Upload and Processing")
     
     # File upload
-    member_outreach_file = st.file_uploader("Upload Member Outreach File", type="xlsx")
-    event_debrief_file = st.file_uploader("Upload Event Debrief File", type="xlsx")
-    submitted_file = st.file_uploader("Upload Submitted File", type="xlsx")
-    approved_file = st.file_uploader("Upload Approved File", type="xlsx")
+    member_outreach_file = st.file_uploader("Upload Member Outreach File", type="xlsx","csv")
+    event_debrief_file = st.file_uploader("Upload Event Debrief File", type="xlsx","csv")
+    submitted_file = st.file_uploader("Upload Submitted File", type="xlsx","csv")
+    approved_file = st.file_uploader("Upload Approved File", type="xlsx","csv")
     
     if member_outreach_file and event_debrief_file and submitted_file and approved_file:
         if st.button("Clean Data"):
